@@ -23,3 +23,7 @@ match opcao:
         quantidade = int(input("NÃO TEMOS ESTE IDEM NO CARDAPIO!!!"))
 
 print(f"TOTAL A PAGAR = {total}")
+
+
+
+# https://www.programiz.com/python-programming/online-compiler/
