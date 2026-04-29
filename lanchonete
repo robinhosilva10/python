@@ -1,0 +1,25 @@
+print("LANCHONETE DO ABREU\n____________________")
+print("CARDAPIO\n1 - COXINHA\n2 - PASTEL\n3 - SUCO\n4 - MINI PIZZA\n____________________")
+opcao = int(input("DIGITE UMA OPÇÃO: "))
+
+match opcao:
+    case 1:
+        quantidade = int(input("DIGITE A QUANTIDADE DE COZINHAS:"))
+        total = quantidade*4
+        print(f"VALOR TOTAL R$: {total}")
+    case 2:
+        quantidade = int(input("DIGITE A QUANTIDADE DE PASTEIS:"))
+        total = quantidade*3.5
+        print(f"VALOR TOTAL R$: {total}")
+    case 3:
+        quantidade = int(input("DIGITE A QUANTIDADE DE SUCO:"))
+        total = quantidade*3
+        print(f"VALOR TOTAL R$: {total}")
+    case 4:
+        quantidade = int(input("DIGITE A QUANTIDADE DE SUCO:"))
+        total = quantidade*6
+        print(f"VALOR TOTAL R$: {total}")
+    case _:
+        quantidade = int(input("NÃO TEMOS ESTE IDEM NO CARDAPIO!!!"))
+
+print(f"TOTAL A PAGAR = {total}")
