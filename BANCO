@@ -1,0 +1,32 @@
+print("NUBANK\n____________________")
+saldo = float(input("DIGITE O SITE DA SUA CONTA: "))
+
+print("1- mostrar o saldo\n2- deposito\n3- sacar\n4- sair\n____________________")
+opcao = int(input("DIGITE A OPÇÃO DESEJADA:"))
+
+match opcao:
+    case 1:
+        print(f"SALDO DA CONTAR R$: {saldo:.2f}")
+        
+    case 2: 
+        valor = float(input("DIGITE O VALOR A SER DEPOSITADO: "))
+        saldo = saldo + valor
+        print("DEPOSITO REALIZADO COM SUCESSO!")
+        print(f"SEU NOVO SALDO É DE R$: {saldo:.5}")
+        
+    case 3:
+        valor = float(input("DIGITE O VALOR QUE VOCE DESEJA SACAR: "))
+        if saldo >= valor:
+            saldo = saldo - valor
+            print("SAQUE REALIZADO COM SUCESSO!")
+            print(f"SEU NOVO SALDO É DE R$: {saldo:.2f}")
+        else:
+            print("SALDO INSUFICIENTE!")
+            print(f"SALDO NA CONTA R$: {saldo:.2f}")
+            print(f"VALOR DO SAQUE R$: {saldo:.2f}")
+        
+    case 4: 
+        print("SAINDO DO SISTEMA!")
+        
+    case _:
+        print("OPÇÃO IMNVALIDA")
