@@ -1,0 +1,8 @@
+dia = input("Digite um dia da semana: ")
+
+if dia in ["segunda", "terça", "terca", "quarta", "quinta", "sexta"]:
+    print("Dia útil")
+elif dia in ["sábado", "sabado", "domingo"]:
+    print("Fim de semana")
+else:
+    print("Dia inválido")
